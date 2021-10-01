@@ -8,6 +8,8 @@
 > A Fully Modular and Efficient Bot <br>
 
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+﻿﻿<p align="center">
+<img src="https://wallpapercave.com/uwp/uwp1457823.png" width="176" height="176"/>
 
 </div><br/>
 <br/>
