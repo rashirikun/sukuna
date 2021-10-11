@@ -18,9 +18,6 @@ export default class Command extends BaseCommand {
         const n =  [
             './assets/videos/Sukuna/sukuna-xp.mp4'
         ]
-        if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
-        const user = M.mentioned[0] ? M.mentioned[0] : M.sender.jid
-        let username = user === M.sender.jid ? M.sender.username : 'Person'
         if (!username) {
             // const contact = this.client.getContact(user)
             // username = contact.notify || contact.vname || contact.name || user.split('@')[0]
