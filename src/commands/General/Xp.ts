@@ -28,6 +28,6 @@ export default class Command extends BaseCommand {
         }
         return void this.client.sendMessage(M.from, { url: shinobu }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption: Your Xp is `${(await this.client.getUser(user)).Xp || 0}`
+            caption: Your Xp is `${(await this.client.getUser(user)).Xp || 0}\n` }
     }
 }
