@@ -1,0 +1,30 @@
+import MessageHandler from '../../Handlers/MessageHandler'
+import BaseCommand from '../../lib/BaseCommand'
+import WAClient from '../../lib/WAClient'
+import { ISimplifiedMessage } from '../../typings'
+import axios from 'axios'
+
+export default class Command extends BaseCommand {
+    constructor(client: WAClient, handler: MessageHandler) {
+        super(client, handler, {
+            command: 'anime',
+            description: 'Will send you anime info.',
+            aliases: ['ani'],
+            category: 'weeb',
+            usage: `${client.config.prefix}anime`
+        })
+    }
+
+    run = async (M: ISimplifiedMessage): Promise<void> => {
+        await axios
+            .get(`https://api.aniapi.com/v1/anime`)
+            .then((response) => {
+                // console.log(response);
+                const text = `Here you go..`
+                M.reply(text)
+            })
+            .catch((err) => {
+                M.reply(`🧨 An error occurred: ${err}`)
+            })
+    }
+}
