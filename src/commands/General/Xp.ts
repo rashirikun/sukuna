@@ -41,8 +41,8 @@ export default class Command extends BaseCommand {
             MessageType.image,
             undefined,
             undefined,
-            `🎋 *Username: ${username}*\n\n🛡️ *Rank: Reaper 3*
-            \n\n🧧*XP: ${data.Xp || 0}*\n\n\n\n`
+            `🎋 *Username: ${username}*\n\n
+             🧧*XP: ${data.Xp || 0}*\n`
         )
     }
 }
