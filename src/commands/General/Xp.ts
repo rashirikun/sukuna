@@ -18,11 +18,7 @@ export default class Command extends BaseCommand {
         const n =  [
             './assets/videos/Sukuna/sukuna-xp.mp4'
         ]
-        if (!username) {
-            // const contact = this.client.getContact(user)
-            // username = contact.notify || contact.vname || contact.name || user.split('@')[0]
-            username = user.split('@')[0]
-        }
+        let sukuna = n[Math.floor(Math.random() * n.length)]
         return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: Your Xp is `${(await this.client.getUser(user)).Xp || 0} \n\n\n`}
