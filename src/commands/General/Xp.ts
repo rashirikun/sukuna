@@ -41,7 +41,7 @@ export default class Command extends BaseCommand {
             MessageType.image,
             undefined,
             undefined,
-            `🧧 *${username}'s XP: ${data.Xp || 0}* \n\n`
+            `🧧 *${username}'s XP: ${data.Xp || 0}*`
         )
     }
 }
