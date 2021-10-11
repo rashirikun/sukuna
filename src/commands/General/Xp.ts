@@ -28,7 +28,7 @@ export default class Command extends BaseCommand {
             // username = contact.notify || contact.vname || contact.name || user.split('@')[0]
             username = user.split('@')[0]
         }
-            return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video,{
+            return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `${username}'s XP: ${(await this.client.getUser(user)).Xp || 0 ` } 
             
