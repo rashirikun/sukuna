@@ -15,12 +15,14 @@ export default class Command extends BaseCommand {
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
-        const n =  [
-            './assets/videos/Sukuna/sukuna-xp.mp4'
-        ]
-        let sukuna = n[Math.floor(Math.random() * n.length)]
-        return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
-            mimetype: Mimetype.gif,
-            caption: Your Xp is `${(await this.client.getUser(user)).Xp || 0} \n\n\n`}
+        if (M.quoted?.sender) M.mentioned.push(M.quoted.sender)
+        const user = M.mentioned[0] ? M.mentioned[0] : M.sender.jid
+        let username = user === M.sender.jid ? M.sender.username : 'Person'
+        if (!username) {
+            // const contact = this.client.getContact(user)
+            // username = contact.notify || contact.vname || contact.name || user.split('@')[0]
+            username = user.split('@')[0]
+        }
+        return void (await M.reply(`${username}'s XP: ${(await this.client.getUser(user)).Xp || 0}`))
     }
 }
