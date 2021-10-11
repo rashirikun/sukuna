@@ -11,7 +11,7 @@ export default class Command extends BaseCommand {
             category: 'general',
             usage: `${client.config.prefix}xp (@tag)`,
             aliases: ['exp']
-        })
+})
     }
 
     run = async (M: ISimplifiedMessage): Promise<void> => {
@@ -30,7 +30,7 @@ export default class Command extends BaseCommand {
         }
             return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video,{
             mimetype: Mimetype.gif,
-            caption: `${username} XP: ${(await this.client.getUser(user)).Xp || 0 ` } 
+            caption: `${username}'s XP: ${(await.client.getUser(user)).Xp || 0 ` } 
             
           )
        }
