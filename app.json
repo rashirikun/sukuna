@@ -1,5 +1,5 @@
 {
-    "name": "sukuna",
+    "name": "shinobu",
     "description": "Maintained Fork of Void",
     "keywords": [
       "bot",
@@ -11,8 +11,8 @@
       "whatsapp-sticker-bot",
       "whatsapp-botto"
     ],
-    "repository": "https://github.com/well300/sukuna.git",
-    "logo": "https://pbs.twimg.com/media/Eu4b9JaXEAAeByb.jpg",
+    "repository": "https://github.com/well300/shinobu.git",
+    "logo": "https://i.pinimg.com/474x/31/c0/e9/31c0e9f7dd25ec2147fa26ef5d192798.jpg",
     "success_url": "/",
     "env": {
       "PREFIX": {
