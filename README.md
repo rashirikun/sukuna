@@ -12,8 +12,6 @@
 </div><br/>
 <br/>
 
-## 🧧 Sukuna
-- To Deploy Sukuna Botto, click here➡️[Sukuna.md](https://github.com/well300/sukuna)
 ## ⚡ Chitoge
 - To Deploy Chitoge Botto, click here➡️[Chitoge.md](https://github.com/ShinNouzen/Chitoge)
 
