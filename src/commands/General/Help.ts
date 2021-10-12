@@ -19,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/videos/Sinobu/shinobu.mp4'
+            './assets/videos/Shinobu/shinobu.mp4'
         ]
         let shinobu = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -44,7 +44,7 @@ export default class Command extends BaseCommand {
 ╰────────────┈平和                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `❈┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❈\n⪩ \`\`\`${categories[
+                text += `❈┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❈\n• \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
