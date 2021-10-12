@@ -1,19 +1,19 @@
 <div align="center">
-<img src="https://c.tenor.com/FmPlHalWQYcAAAAC/sukuna.gif" width="700"></br></a>
+<img src="https://64.media.tumblr.com/b3b2020fe2ed9b1ae3dfccc932fa0e61/tumblr_pwe9tu9ReA1toni03o1_r1_540.gifv" width="600"></br></a>
 
-# **ʂυƙυɳα : The Next Level Void WhatsApp BOTTO**
-[![CodeFactor](https://www.codefactor.io/repository/github/prajjwaldatir/kaoi/badge)](https://www.codefactor.io/repository/github/prajjwaldatir/kaoi)
-## [![WhatsApp Group](https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white)](https://chat.whatsapp.com/I4m8zLPwTme9II9aZWRZJ1) [![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/) [![NodeJs](https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white)](https://nodejs.org/en/)
-
-> A Fully Modular and Efficient Bot <br>
-
+# **ꜱʜɪɴᴏʙᴜ : The Next Level Void WhatsApp BOTTO**
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
-﻿﻿<p align="center">
-<img src="https://wallpapercave.com/uwp/uwp1457823.png" width="176" height="176"/>
+
+<p align="center">
+<img src="https://www.gifcen.com/wp-content/uploads/2021/08/shinobu-gif-2.gif" width="176" height="176"/>
+
+<a href="https://wa.me/917993034080">OWNER</a>
 
 </div><br/>
 <br/>
 
+## 🧧 Sukuna
+- To Deploy Sukuna Botto, click here➡️[Sukuna.md](https://github.com/well300/sukuna)
 ## ⚡ Chitoge
 - To Deploy Chitoge Botto, click here➡️[Chitoge.md](https://github.com/ShinNouzen/Chitoge)
 
