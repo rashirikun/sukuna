@@ -9,7 +9,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'xp',
-            description: "Displays User's Xp 🌟",
+            description: "Displays User's Xp ♨",
             category: 'general',
             usage: `${client.config.prefix}xp (@tag)`,
             aliases: ['exp']
@@ -41,7 +41,7 @@ export default class Command extends BaseCommand {
             MessageType.image,
             undefined,
             undefined,
-            `🧧 *${username}'s XP: ${data.Xp || 0}*`
+            `🧧 *${username}'s \n XP: ${data.Xp || 0}*`
         )
     }
 }

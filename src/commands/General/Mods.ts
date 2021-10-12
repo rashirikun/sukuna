@@ -20,11 +20,11 @@ export default class Command extends BaseCommand {
         let text = '🍥 *Moderators* 🍥\n\n'
         filteredMap.forEach(
             (user, index) =>
-                (text += `#${index + 1}\n火 *Username: ${
+                (text += `#${index + 1}\n〽 *Username: ${
                     user.notify || user.vname || user.name || 'null'
                 }*\n🍀 *Contact: https://wa.me/+${user?.jid?.split('@')[0]}*\n\n`)
         )
-        text += `\n火 ʂυƙυɳα `
+        text += `\n🦋 ꜱʜɪɴᴏʙᴜ `
         return void M.reply(text)
     }
 }
