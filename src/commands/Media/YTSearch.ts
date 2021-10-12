@@ -29,14 +29,14 @@ export default class Command extends BaseCommand {
                 videos[i].author.name
             }\n 📙 *Duration:* ${videos[i].duration}\n📘 *URL:* ${videos[i].url}\n\n`
         }
-        M.reply('火 Searching...⌛')
+        M.reply('🦋 Searching...〽')
         this.client
             .sendMessage(M.from, text, MessageType.extendedText, {
                 quoted: M.WAMessage,
                 contextInfo: {
                     externalAdReply: {
                         title: `Search Term: ${term}`,
-                        body: `火 ʂυƙυɳα`,
+                        body: `🦋 ꜱʜɪɴᴏʙᴜ`,
                         mediaType: 2,
                         thumbnailUrl: videos[0].thumbnail,
                         mediaUrl: videos[0].url
