@@ -25,7 +25,7 @@ export default class Command extends BaseCommand {
             caption: `🦋 ꜱʜɪɴᴏʙᴜ\n\n⚜ *Features* : 
 |Media| usage |
 
-|Lyrics| Gives you the lyrics of the given song|
+Lyrics: Gives you the lyrics of the given song.
 |Play| Plays the given title|
 |Spotify|  Downloads songs from Spotify| 
 |YouTube video |Downloads video from YouTube| 
