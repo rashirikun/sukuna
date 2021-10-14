@@ -61,24 +61,23 @@ Lyrics: Gives you the lyrics of the given song.
 |Demote| Demotes the tagged user as a standard participant from an admin if he's one. Can work only when commanding user is himself a group admin|
 |Remove| Removes the tagged user from the group, can only work if the bot is an admin and the one commanding this tool|
 
-|Utils| usage|
+*Utils*
 
-|Blur| Blurs the tagged image or the pfp of the user's commanding it|
-|Sticker| Converts the given gif/image into a webp sticker|
-|Subred| A random subreddit post based on the specified search would be fetched. (Sometimes nsfw posts can too be fetched so be careful)|
-|Steal| Steals the given sticker (This command is under development)|
+Blur| Blurs the tagged image or the pfp of the user's commanding it|
+Sticker| Converts the given gif/image into a webp sticker|
+Subred| A random subreddit post based on the specified search would be fetched. (Sometimes nsfw posts can too be fetched so be careful)|
+Steal| Steals the given sticker (This command is under development)|
 
-|Weeb| usage|
+*Weeb*
 
-|Kitsune| Sends you random kitsune image|
-|Loli| Sends you random anime loli image|
-|Megumin-paper| Sends you random Megumin (From Konosuba) image|
-|Neko| Sends you random anime neko image|
-|Rpaper| Sends you random anime wallpaper|
-|Shinobu-paper| Sends you random Shinobu Oshino (From Bakemonogatari) image|
-|Waifu| Sends you random anime waifu image|
+Kitsune: Sends you random kitsune image.
+Loli: Sends you random anime loli image.
+Megumin-paper: Sends you random Megumin (From Konosuba) image.
+Neko: Sends you random anime neko image.
+Rpaper: Sends you random anime wallpaper.
+Waifu: Sends you random anime waifu image.
 
-|Dev| usage|
+*Dev*
 
 Disable: Disables the specified bot command from being used in a group chat.
 
