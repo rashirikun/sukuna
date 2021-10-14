@@ -23,14 +23,14 @@ export default class Command extends BaseCommand {
         return void this.client.sendMessage(M.from, { url: shinobu }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption: `🦋 ꜱʜɪɴᴏʙᴜ\n\n⚜ *Features* : 
-|Media| usage |
+*Media*
 
 Lyrics: Gives you the lyrics of the given song.
-|Play| Plays the given title|
-|Spotify|  Downloads songs from Spotify| 
-|YouTube video |Downloads video from YouTube| 
-|YouTube audio| Downloads audio from YouTube|
-|YouTube search| Searches the given title from YouTube| 
+Play: Plays the given title.
+Spotify:  Downloads songs from Spotify.
+YouTube video: Downloads video from YouTube.
+YouTube audio| Downloads audio from YouTube.
+YouTube search| Searches the given title from YouTube. 
 
 |General| usage |
 
