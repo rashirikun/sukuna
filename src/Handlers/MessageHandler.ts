@@ -18,7 +18,7 @@ export default class MessageHandler {
             https://adiwajshing.github.io/Baileys/enums/proto.webmessageinfo.webmessageinfostatus.html#server_ack
             */
             M.sender.jid = this.client.user.jid
-            M.sender.username = this.client.user.name || this.client.user.vname || this.client.user.short || 'Kaoi Bot'
+            M.sender.username = this.client.user.name || this.client.user.vname || this.client.user.short || 'Shinobu'
         } else if (M.WAMessage.key.fromMe) return void null
 
         if (M.from.includes('status')) return void null
@@ -40,7 +40,7 @@ export default class MessageHandler {
                         return void M.reply(res.data.cnt)
                     })
                     .catch(() => {
-                        M.reply(`Ummmmmmmmm.`)
+                        M.reply(`Well...`)
                     })
             }
         }
