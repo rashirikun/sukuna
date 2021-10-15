@@ -2,9 +2,6 @@ import MessageHandler from '../../Handlers/MessageHandler'
 import BaseCommand from '../../lib/BaseCommand'
 import WAClient from '../../lib/WAClient'
 import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
-import { MessageType, Mimetype } from '@adiwajshing/baileys'
-import request from '../../lib/request'
-
 
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
@@ -13,7 +10,8 @@ export default class Command extends BaseCommand {
             description: 'Displays the help menu or shows the info of the command provided',
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
-            aliases: ['h']
+            aliases: ['h'],
+            baseXp: 30
         })
     }
 
