@@ -10,7 +10,7 @@ export default class Command extends BaseCommand {
         super(client, handler, {
             command: 'shinobu',
             description: 'Displays the info.',
-            category: 'misc',
+            category: 'bots',
             usage: `${client.config.prefix}shinobu`
         })
     }
