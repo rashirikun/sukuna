@@ -5,8 +5,6 @@
 [![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
 <p align="center">
-<a href="https://www.codefactor.io/repository/github/well300/kaguya-bot"><img src="https://www.codefactor.io/repository/github/well300/shinobu/badge" alt="CodeFactor" /></a>
-<p align="center">
 <img src="https://www.gifcen.com/wp-content/uploads/2021/08/shinobu-gif-2.gif" width="176" height="176"/>
 
 <a href="https://wa.me/917993034080">OWNER</a>
@@ -14,9 +12,8 @@
 </div><br/>
 <br/>
 
-## ♨ Sukuna
-- To Deploy Sukuna Botto, click here➡️[Sukuna.md](https://github.com/Swell300/sukuna)
-
+## 🧧 Sukuna
+- To Deploy Sukuna Botto, click here➡️[Sukuna.md](https://github.com/well300/sukuna)
 ## ⚡ Chitoge
 - To Deploy Chitoge Botto, click here➡️[Chitoge.md](https://github.com/ShinNouzen/Chitoge)
 

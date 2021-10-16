@@ -1,5 +1,5 @@
 {
-    "name": "shinobu",
+    "name": "Shinobu",
     "description": "Maintained Fork of Void",
     "keywords": [
       "bot",
@@ -12,7 +12,7 @@
       "whatsapp-botto"
     ],
     "repository": "https://github.com/well300/shinobu.git",
-    "logo": "https://i.pinimg.com/474x/31/c0/e9/31c0e9f7dd25ec2147fa26ef5d192798.jpg",
+    "logo": "https://data.whicdn.com/images/357488402/original.jpg?t=1628247813",
     "success_url": "/",
     "env": {
       "PREFIX": {
