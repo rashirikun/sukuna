@@ -29,6 +29,11 @@ export default class Command extends BaseCommand {
                 const info = this.handler.commands.get(command)
                 if (!command) continue
                 if (!info?.config?.category || info.config.category === 'dev') continue
+                if (Object.keys(categories).includes(info.config.category)) categories[info.config.category].push(info)
+                else {
+                    categories[info.config.category] = []
+                    categories[info.config.category].push(info)
+                }
                 if (!w) return void this.client.sendMessage(M.from, 'command list', MessageType.text)
                 await this.client.setXp(w, 50, 100)
                 if (w)
@@ -37,12 +42,7 @@ export default class Command extends BaseCommand {
                         this.client.assets.get() || 'well...',
                         {
                             contextInfo: { mentionedJid: [w] }
-                        }
-                if (Object.keys(categories).includes(info.config.category)) categories[info.config.category].push(info)
-                else {
-                    categories[info.config.category] = []
-                    categories[info.config.category].push(info)
-                }
+                        }                
             }
             let text = `
 ╭─「（＾∀＾●）ﾉｼ」
