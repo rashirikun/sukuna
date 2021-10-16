@@ -34,27 +34,17 @@ export default class Command extends BaseCommand {
                     categories[info.config.category] = []
                     categories[info.config.category].push(info)
                 }
-                if (!w) return void this.client.sendMessage(M.from, 'command list', MessageType.text)
-                await this.client.setXp(w, 50, 100)
-                if (w)
-                    return void this.client.sendMessage(
-                        M.from,
-                        this.client.assets.get() || 'well...',
-                        {
-                            contextInfo: { mentionedJid: [w] }
-                        }
-                 )
             }
             let text = `
 ╭─「（＾∀＾●）ﾉｼ」
-│⋊ ᴜꜱᴇʀ: @${w.split('@')[0]}
+│⋊ ᴜꜱᴇʀ: *${M.sender.username}*
 │⋊ ɴᴀᴍᴇ: ꜱʜɪɴᴏʙᴜ
 │⋊ ᴘʀᴇꜰɪx: !
-│⋊ ᴏᴡɴᴇʀ: ${client.config.prefix}mod
-╰────────────┈平和                    \n\n`
+│⋊ ᴏᴡɴᴇʀ: <!mod>
+╰────────────┈平和                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}* ${this.emojis[keys.indexOf(key)]}\n\n• \`\`\`${categories[
+                text += `❈┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❈\n• \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
@@ -90,5 +80,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋','🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋']
+    emojis = ['🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋']
 }
