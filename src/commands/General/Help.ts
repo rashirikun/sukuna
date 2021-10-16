@@ -42,15 +42,15 @@ export default class Command extends BaseCommand {
                         this.client.assets.get() || 'well...',
                         {
                             contextInfo: { mentionedJid: [w] }
-                        }                
+                        } )              
             }
             let text = `
 ╭─「（＾∀＾●）ﾉｼ」
 │⋊ ᴜꜱᴇʀ: @${w.split('@')[0]}
 │⋊ ɴᴀᴍᴇ: ꜱʜɪɴᴏʙᴜ
 │⋊ ᴘʀᴇꜰɪx: !
-│⋊ ᴏᴡɴᴇʀ: <!mod>
-╰────────────┈平和                 \n\n`
+│⋊ ᴏᴡɴᴇʀ: ${client.config.prefix}mod
+╰────────────┈平和                    \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}* ${this.emojis[keys.indexOf(key)]}\n\n• \`\`\`${categories[
