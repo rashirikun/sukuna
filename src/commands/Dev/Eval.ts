@@ -10,20 +10,18 @@ export default class Command extends BaseCommand {
             description: 'Evaluates JavaScript ➕ ',
             category: 'dev',
             dm: true,
-            usage: `${client.config.prefix}eval [JS CODE]`,
-            modsOnly: true,
-            baseXp: 0
+            usage: `${client.config.prefix}eval [JS CODE]`
         })
     }
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
+        if (!this.client.config.mods?.includes(M.sender.jid)) return void null
         let out: string
         try {
             const output = eval(parsedArgs.joined) || 'Executed JS Successfully!'
             console.log(output)
             out = JSON.stringify(output)
-            // eslint-disable-next-line @typescript-eslint/no-explicit-any
-        } catch (err: any) {
+        } catch (err) {
             out = err.message
         }
         return void (await M.reply(out))

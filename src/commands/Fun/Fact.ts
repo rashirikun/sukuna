@@ -8,11 +8,10 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'fact',
-            description: 'sends a random fact for you.',
-            aliases: ['facts'],
+            description: 'Will send you random fact.',
+            aliases: ['f'],
             category: 'fun',
-            usage: `${client.config.prefix}fact`,
-            baseXp: 30
+            usage: `${client.config.prefix}fact`
         })
     }
 
@@ -21,11 +20,11 @@ export default class Command extends BaseCommand {
             .get(`https://nekos.life/api/v2/fact`)
             .then((response) => {
                 // console.log(response);
-                const text = `📝 *Fact:* ${response.data.fact}`
+                const text = `📛 *Fact* : ${response.data.fact}`
                 M.reply(text)
             })
             .catch((err) => {
-                M.reply(`🔍 Error: ${err}`)
+                M.reply(`✖ An error occurred: ${err}`)
             })
     }
 }
