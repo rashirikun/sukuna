@@ -5,6 +5,7 @@ import { ICommand, IParsedArgs, ISimplifiedMessage } from '../../typings'
 import { MessageType, Mimetype } from '@adiwajshing/baileys'
 import request from '../../lib/request'
 
+
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
@@ -18,7 +19,7 @@ export default class Command extends BaseCommand {
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
             const n = [
-            './assets/videos/Shinobua/shinobu.mp4'
+            './assets/videos/Shinobu/shinobu.mp4'
         ]
         let shinobu = n[Math.floor(Math.random() * n.length)]
         if (!parsedArgs.joined) {
@@ -34,119 +35,23 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
-        const mn=`
+            let text = `
 ╭─「（＾∀＾●）ﾉｼ」
 │⋊ ᴜꜱᴇʀ: *${M.sender.username}*
 │⋊ ɴᴀᴍᴇ: ꜱʜɪɴᴏʙᴜ
 │⋊ ᴘʀᴇꜰɪx: !
 │⋊ ᴏᴡɴᴇʀ: <!mod>
-╰────────────┈平和
-
-🦋 *Fun* 🦋
-
-🎭 bite 
-🎭 bonk 
-🎭 chess 
-🎭 cry 
-🎭 dance 
-🎭 darkjoke 
-🎭 fact 
-🎭 happy 
-🎭 highfive 
-🎭 hug 
-🎭 kick 
-🎭 kill 
-🎭 kiss 
-🎭 lick 
-🎭 poke 
-🎭 quote 
-🎭 safejoke 
-🎭 ship 
-🎭 smile 
-🎭 trigger 
-🎭 wave 
-🎭 wink 
-🎭 yeet
-
-🦋 *Fun-2* 🦋
-
-🎁 bully 
-🎁 choke 
-🎁 cringe 
-🎁 cuddle 
-🎁 eat 
-🎁 fquote 
-🎁 hold 
-🎁 in-love-with 
-🎁 pat 
-🎁 punch 
-🎁 scare 
-🎁 slap 
-🎁 slash 
-🎁 sleep 
-🎁 smug 
-🎁 tickle 
-🎁 ultrahug 
-🎁 why
-
-🦋 *General* 🦋
-
-♨ admins 
-♨ google 
-♨ help 
-♨ mods 
-♨ profile 
-♨ xp
-
-🦋 *Media* 🦋
-
-🎙 karaoke 
-🎙 lyrics 
-🎙 play 
-🎙 spotify 
-🎙 yta 
-🎙 yts 
-🎙 ytv 
-🎙 screenshot
-
-🦋 *Misc* 🦋
-
-🎗 hi 
-🎗 retrieve 
-🎗 shinobu
-
-🦋 *Moderation* 🦋
-
-🧧 activate 
-🧧 close 
-🧧 deactivate 
-🧧 delete 
-🧧 demote 
-🧧 everyone 
-🧧 open 
-🧧 promote 
-🧧 remove
-
-🦋 *Utils* 🦋
-
-🎈 blur 
-🎈 steal 
-🎈 sticker 
-🎈 subred
-
-🦋 *Weeb* 🦋
-
-🎑 anime-line 
-🎑 genshincharacter 
-🎑 husbando 
-🎑 kitsune 
-🎑 loli 
-🎑 meguminpaper 
-🎑 neko 
-🎑 rpaper 
-🎑 waifu
-
- 
+╰────────────┈平和                 \n\n`
+            const keys = Object.keys(categories)
+            for (const key of keys)
+                text += `❈┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❈\n• \`\`\`${categories[
+                    key
+                ]
+                    .map((command) => command.config?.command)
+                    .join(' \n ')}\`\`\`\n\n`
+            return void this.client.sendMessage(M.from, { url: shinobu }, MessageType.video, {
+            mimetype: Mimetype.gif,
+            caption: `${text} 
  ──❅┈[ ꜱʜɪɴᴏʙᴜ ʙᴏᴛ ]┈❅───
 
 ┌────────────┈❅
@@ -155,14 +60,10 @@ export default class Command extends BaseCommand {
 └────────────┈⁂
 ❅┈[𝐇𝐚𝐯𝐞 𝐆𝐫𝐞𝐚𝐭 𝐃𝐚𝐲]┈❅
 
-🎗 Note: Use !help <command_name> to view the command info
-`
-        return void this.client.sendMessage(M.from, { url: shinobu }, MessageType.video, {
-            mimetype: Mimetype.gif,
-            caption:mn }
-        )
-    }
-    const key = parsedArgs.joined.toLowerCase()
+🎗 *Note: Use ${this.client.config.prefix}help <command_name> to view the command info*` }
+            )
+        }
+        const key = parsedArgs.joined.toLowerCase()
         const command = this.handler.commands.get(key) || this.handler.aliases.get(key)
         if (!command) return void M.reply(`No Command of Alias Found | "${key}"`)
         const state = await this.client.DB.disabledcommands.findOne({ command: command.config.command })
@@ -178,6 +79,6 @@ export default class Command extends BaseCommand {
             )}\n💎 *Usage:* ${command.config?.usage || ''}\n\n📒 *Description:* ${command.config?.description || ''}`
         )
     }
-    
-    emojis = ['🈷️', '🈹️', '🈯️', '☮', '🈳️', '🈵️', '🈂️', '㊗️', '🈁️']
+
+    emojis = ['🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋']
 }
