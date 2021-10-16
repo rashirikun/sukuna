@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
             category: 'general',
             usage: `${client.config.prefix}help (command_name)`,
             aliases: ['h']
-        }
+        })
     }
 
     run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
@@ -42,7 +42,8 @@ export default class Command extends BaseCommand {
                         this.client.assets.get() || 'well...',
                         {
                             contextInfo: { mentionedJid: [w] }
-                        }),              
+                        }
+                 )
             }
             let text = `
 ╭─「（＾∀＾●）ﾉｼ」
