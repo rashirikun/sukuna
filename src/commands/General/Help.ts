@@ -34,7 +34,10 @@ export default class Command extends BaseCommand {
                 if (w)
                     return void this.client.sendMessage(
                         M.from,
-                        this.client.assets.get() || '',           
+                        this.client.assets.get() || '',
+                        {
+                            contextInfo: { mentionedJid: [w] }
+                        }
                 if (Object.keys(categories).includes(info.config.category)) categories[info.config.category].push(info)
                 else {
                     categories[info.config.category] = []
