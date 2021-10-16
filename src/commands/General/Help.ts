@@ -45,7 +45,8 @@ export default class Command extends BaseCommand {
 ╰────────────┈平和                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}* ${this.emojis[keys.indexOf(key)]}\n ${this.emoji[keys.indexOf(key)]} ${this.emoji[keys.indexOf(key)]} ${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}${this.emoji[keys.indexOf(key)]}\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`\`${categories[
+                text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}* ${this.emojis[keys.indexOf(key)]}\n ${this.emoji[keys.indexOf(key)]},
+                ${this.emoji[keys.indexOf(key)]}\`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
