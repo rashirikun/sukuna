@@ -21,6 +21,8 @@ export default class Command extends BaseCommand {
             './assets/images/Shinobu/shinobu.mp4'
         ]
         let shinobu = n[Math.floor(Math.random() * n.length)]
+        return void this.client.sendMessage(M.from, { url: shinobu }, MessageType.video, {quoted:M.WAMessage,
+        mimetype: Mimetype.gif,
         const mn=`
 ╭─「（＾∀＾●）ﾉｼ」
 │⋊ ᴜꜱᴇʀ: *${M.sender.username}*
