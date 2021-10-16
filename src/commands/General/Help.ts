@@ -146,7 +146,7 @@ export default class Command extends BaseCommand {
 `
         return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
             mimetype: Mimetype.gif,
-            caption:well.}
+            caption:well }
         )
     }
 }
