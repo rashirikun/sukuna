@@ -37,7 +37,7 @@ export default class Command extends BaseCommand {
             }
             let text = `
 ╭─「（＾∀＾●）ﾉｼ」
-│⋊ ᴜꜱᴇʀ: *${M.sender.username}*
+│⋊ ᴜꜱᴇʀ: @${w.split('@')[0]}
 │⋊ ɴᴀᴍᴇ: ꜱʜɪɴᴏʙᴜ
 │⋊ ᴘʀᴇꜰɪx: !
 │⋊ ᴏᴡɴᴇʀ: <!mod>
