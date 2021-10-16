@@ -35,16 +35,17 @@ export default class Command extends BaseCommand {
                     categories[info.config.category].push(info)
                 }
             }
+            
             let text = `
 ╭─「（＾∀＾●）ﾉｼ」
-│⋊ ᴜꜱᴇʀ: *${M.sender.username}*
+│⋊ ᴜꜱᴇʀ: { mentionedJid: [w] }
 │⋊ ɴᴀᴍᴇ: ꜱʜɪɴᴏʙᴜ
 │⋊ ᴘʀᴇꜰɪx: !
 │⋊ ᴏᴡɴᴇʀ: <!mod>
 ╰────────────┈平和                 \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
-                text += `❈┈ᕮ✧${this.emojis[keys.indexOf(key)]} ${this.client.util.capitalize(key)}✧ᕭ┈❈\n• \`\`\`${categories[
+                text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}* ${this.emojis[keys.indexOf(key)]}\n• \`\`\`${categories[
                     key
                 ]
                     .map((command) => command.config?.command)
@@ -80,5 +81,5 @@ export default class Command extends BaseCommand {
         )
     }
 
-    emojis = ['🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋']
+    emojis = ['🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋','🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋', '🦋']
 }
