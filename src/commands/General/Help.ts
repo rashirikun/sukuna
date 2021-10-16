@@ -16,9 +16,9 @@ export default class Command extends BaseCommand {
         })
     }
 
-    run = async (M: ISimplifiedMessage): Promise<void> => {
-        const n = [
-            './assets/images/Shinobu/shinobu.mp4'
+    run = async (M: ISimplifiedMessage, parsedArgs: IParsedArgs): Promise<void> => {
+            const n = [
+            './assets/videos/Shinobua/shinobu.mp4'
         ]
         let shinobu = n[Math.floor(Math.random() * n.length)]
         const mn=`
