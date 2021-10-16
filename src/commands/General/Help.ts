@@ -144,7 +144,7 @@ export default class Command extends BaseCommand {
 
 🎗 Note: Use !help <command_name> to view the command info
 `
-        return void this.client.sendMessage(M.from, { url: sukuna }, MessageType.video, {
+        return void this.client.sendMessage(M.from, { url: sjinobu }, MessageType.video, {
             mimetype: Mimetype.gif,
             caption:mn }
         )
