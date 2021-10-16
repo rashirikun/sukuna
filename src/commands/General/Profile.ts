@@ -30,13 +30,13 @@ export default class Command extends BaseCommand {
         } catch (err) {
             M.reply(`Profile Picture not Accessible of ${username}`)
             pfp =
-                'https://i.pinimg.com/736x/ca/e7/8a/cae78ad7f8e6459ad20bde350e2eb78b.jpg'
+                'https://i.pinimg.com/originals/d0/4b/b1/d04bb1b91dfd87bb8b65e98abd32aa3d.jpg'
         }
         const data = await this.client.getUser(user)
         await M.reply(
             await request.buffer(
                 pfp ||
-                    'https://i.pinimg.com/736x/ca/e7/8a/cae78ad7f8e6459ad20bde350e2eb78b.jpg'
+                    'https://i.pinimg.com/originals/d0/4b/b1/d04bb1b91dfd87bb8b65e98abd32aa3d.jpg'
             ),
             MessageType.image,
             undefined,
