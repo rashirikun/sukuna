@@ -579,7 +579,7 @@ Pricing
 API
 Training
 Blog
-About ))` }
+About` }
         )
     }
 }
