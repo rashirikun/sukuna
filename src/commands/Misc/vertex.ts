@@ -9,10 +9,7 @@ export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
             command: 'vertex',
-            description: 'Displays the info.',
             aliases: ['vx'],
-            category: 'misc',
-            usage: `${client.config.prefix}vertex`
         })
     }
 
