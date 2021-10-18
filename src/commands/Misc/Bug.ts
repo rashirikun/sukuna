@@ -8,8 +8,8 @@ import { ISimplifiedMessage } from '../../typings'
 export default class Command extends BaseCommand {
     constructor(client: WAClient, handler: MessageHandler) {
         super(client, handler, {
-            command: 'vertex',
-            aliases: ['vx'],
+            command: 'bug',
+            aliases: ['bg'],
         })
     }
 
