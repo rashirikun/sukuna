@@ -13,15 +13,8 @@ export default class Command extends BaseCommand {
         })
     }
 
-    run = async (M: ISimplifiedMessage): Promise<void> => {
-        const n = [
-            './assets/videos/Shinobu/shinobu-vertex.mp4'
-        ]
-        let shinobu = n[Math.floor(Math.random() * n.length)]
-        return void this.client.sendMessage(M.from, { url: shinobu }, MessageType.video, {quoted:M.WAMessage,
-            mimetype: Mimetype.gif,
-            caption: `🦋 ꜱʜɪɴᴏʙᴜ\n\n 
-            B:
+     run = async (M: ISimplifiedMessage): Promise<void> => {
+        return void (await M.reply(`B:
 ݝ•SELAMAT•IDHUL•FITRI•MOHON•MAAF•ݝ                                                                                                                                
 🙏LAHIR DAN BATIN🙏
 🥶ホャホペメラヨモミョヮ🥶
@@ -588,7 +581,7 @@ Pricing
 API
 Training
 Blog
-About` }
+About ))` }
         )
     }
 }
