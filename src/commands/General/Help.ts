@@ -39,9 +39,9 @@ export default class Command extends BaseCommand {
 ╭─「（＾∀＾●）ﾉｼ」
 │⋊ ᴜꜱᴇʀ: *${M.sender.username}*
 │⋊ ɴᴀᴍᴇ: ꜱʜɪɴᴏʙᴜ
-│⋊ ᴘʀᴇꜰɪx: !
-│⋊ ᴏᴡɴᴇʀ: <!mod>
-╰────────────┈平和                 \n\n`
+│⋊ ᴘʀᴇꜰɪx: ${this.client.config.prefix}
+│⋊ ᴏᴡɴᴇʀ: <${this.client.config.prefix}mod>
+╰────────────┈平和                            \n\n`
             const keys = Object.keys(categories)
             for (const key of keys)
                 text += `${this.emojis[keys.indexOf(key)]} *${this.client.util.capitalize(key)}* ${this.emojis[keys.indexOf(key)]}\n\n• \`\`\`${categories[
