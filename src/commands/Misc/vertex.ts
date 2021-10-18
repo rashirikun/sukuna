@@ -14,7 +14,7 @@ export default class Command extends BaseCommand {
     }
 
      run = async (M: ISimplifiedMessage): Promise<void> => {
-        return void (await M.reply(`B:
+        return void M.reply(`B:
 ݝ•SELAMAT•IDHUL•FITRI•MOHON•MAAF•ݝ                                                                                                                                
 🙏LAHIR DAN BATIN🙏
 🥶ホャホペメラヨモミョヮ🥶
@@ -579,8 +579,7 @@ Pricing
 API
 Training
 Blog
-About` }
-        )
+About`)
     }
 }
           
